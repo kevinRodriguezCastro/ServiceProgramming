@@ -37,4 +37,9 @@ public class AdminCourse extends OnlineCourse{
                 "document=" + document +
                 '}';
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return new AdminCourse(this);
+    }
 }

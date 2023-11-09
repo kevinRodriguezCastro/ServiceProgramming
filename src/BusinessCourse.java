@@ -36,4 +36,8 @@ public class BusinessCourse extends OnlineCourse{
         return Objects.equals(business, that.business);
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return new BusinessCourse(this);
+    }
 }

@@ -35,4 +35,8 @@ public class ITCourse extends OnlineCourse {
         return specialization == itCourse.specialization;
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return new ITCourse(this);
+    }
 }

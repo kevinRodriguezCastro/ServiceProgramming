@@ -71,4 +71,8 @@ public class OnlineCourse {
         return duration == that.duration && Objects.equals(nameCourse, that.nameCourse) && Objects.equals(teacher, that.teacher) && Objects.equals(id, that.id);
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return new OnlineCourse(this);
+    }
 }
