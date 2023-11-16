@@ -3,6 +3,10 @@ import java.util.Objects;
 public class ITCourse extends OnlineCourse {
     Specialization specialization;
 
+    public ITCourse(Specialization specialization) {
+        this.specialization = specialization;
+    }
+
     public ITCourse(String nameCourse, String teacher, String id, Specialization specialization) {
         super(nameCourse, teacher, id, specialization.getDuration());
         this.specialization = specialization;

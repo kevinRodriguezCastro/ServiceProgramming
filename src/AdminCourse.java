@@ -4,6 +4,9 @@ import java.util.Objects;
 public class AdminCourse extends OnlineCourse{
     private ArrayList<String> document;
 
+    public AdminCourse(){
+
+    }
     public AdminCourse(String nameCourse, String teacher, String id, int duration, ArrayList<String> document) {
         super(nameCourse, teacher, id, duration);
         this.document = document;

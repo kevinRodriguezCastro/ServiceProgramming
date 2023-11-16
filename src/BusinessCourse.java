@@ -4,6 +4,9 @@ import java.util.Objects;
 public class BusinessCourse extends OnlineCourse{
     private String business;
 
+    public BusinessCourse() {
+    }
+
     public BusinessCourse(String nameCourse, String teacher, String id, String business) {
         super(nameCourse, teacher, id, 45);
         this.business = business;
