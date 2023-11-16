@@ -6,6 +6,9 @@ public class OnlineCourse {
     private String id;
     private int duration;
 
+    public OnlineCourse(){
+
+    }
     public OnlineCourse(String nameCourse, String teacher, String id, int duration) {
         this.nameCourse = nameCourse;
         this.teacher = teacher;
