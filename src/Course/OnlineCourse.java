@@ -1,6 +1,8 @@
+package Course;
+
 import java.util.Objects;
 
-public class OnlineCourse {
+public abstract class OnlineCourse {
     private String nameCourse;
     private String teacher;
     private String id;
@@ -55,7 +57,7 @@ public class OnlineCourse {
 
     @Override
     public String toString() {
-        return "OnlineCourse{" +
+        return "Course.OnlineCourse{" +
                 "nameCourse='" + nameCourse + '\'' +
                 ", teacher='" + teacher + '\'' +
                 ", id='" + id + '\'' +
@@ -71,8 +73,9 @@ public class OnlineCourse {
         return duration == that.duration && Objects.equals(nameCourse, that.nameCourse) && Objects.equals(teacher, that.teacher) && Objects.equals(id, that.id);
     }
 
+    /*
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return new OnlineCourse(this);
-    }
+        return new Course.OnlineCourse(this);
+    }*/
 }

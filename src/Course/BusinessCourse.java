@@ -1,4 +1,5 @@
-import java.lang.ref.SoftReference;
+package Course;
+
 import java.util.Objects;
 
 public class BusinessCourse extends OnlineCourse{

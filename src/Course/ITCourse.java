@@ -1,4 +1,4 @@
-import java.util.Objects;
+package Course;
 
 public class ITCourse extends OnlineCourse {
     Specialization specialization;
